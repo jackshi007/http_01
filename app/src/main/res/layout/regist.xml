@@ -28,7 +28,6 @@
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:id="@+id/editText"
-        android:text="张三"
         android:layout_toRightOf="@id/textView" />
 </RelativeLayout>
 

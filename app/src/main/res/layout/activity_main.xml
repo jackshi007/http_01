@@ -10,15 +10,31 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.jack.http_01.MainActivity">
 
-    <WebView
-        android:id="@+id/webView"
-        android:visibility="gone"
+    <Button
+        android:id="@+id/image_button"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    </WebView>
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:text="Image_Activity"/>
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/regist_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_button"
+        android:text="Regist_Activity"/>
+
+    <Button
+        android:id="@+id/json_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/regist_button"
+        android:text="Json_Activity"/>
+
+    <Button
+        android:id="@+id/xml_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/json_button"
+        android:text="XML_Activity"/>
 </RelativeLayout>
