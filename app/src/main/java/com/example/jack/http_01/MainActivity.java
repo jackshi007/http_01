@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button json_button;
     private Button xml_button;
     private Button download_button;
+    private Button upload_button;
 
 
     @Override
@@ -27,12 +28,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         json_button = (Button) findViewById(R.id.json_button);
         xml_button = (Button) findViewById(R.id.xml_button);
         download_button = (Button) findViewById(R.id.download_button);
+        upload_button = (Button) findViewById(R.id.upload_button);
 
         image_button.setOnClickListener(this);
         regist_button.setOnClickListener(this);
         json_button.setOnClickListener(this);
         xml_button.setOnClickListener(this);
         download_button.setOnClickListener(this);
+        upload_button.setOnClickListener(this);
     }
 
     @Override
@@ -58,6 +61,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.download_button:
                 Intent download_intent = new Intent(MainActivity.this,DownLoadActivity.class);
                 startActivity(download_intent);
+                break;
+            case R.id.upload_button:
+                Intent upload_intent = new Intent(MainActivity.this,UploadActivity.class);
+                startActivity(upload_intent);
+                break;
         }
     }
 }

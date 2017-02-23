@@ -23,6 +23,7 @@
         <activity android:name=".JsonActivity"></activity>
         <activity android:name=".RegistActivity"></activity>
         <activity android:name=".DownLoadActivity"></activity>
+        <activity android:name=".UploadActivity"></activity>
     </application>
 
 </manifest>

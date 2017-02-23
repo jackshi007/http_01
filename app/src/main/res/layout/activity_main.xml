@@ -44,4 +44,11 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/xml_button"
         android:text="DownLoad_Activity"/>
+
+    <Button
+        android:id="@+id/upload_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/download_button"
+        android:text="Upload_Activity"/>
 </RelativeLayout>
